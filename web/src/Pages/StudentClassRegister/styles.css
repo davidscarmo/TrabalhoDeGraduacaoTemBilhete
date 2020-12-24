@@ -1,0 +1,83 @@
+
+  .mainStudentClassRegisterContainer 
+  {
+      width: 80%;
+      height: 100%;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .mainStudentClassRegisterContainer  h2
+  {
+      margin: 1rem 0;
+      font-size: 1.25rem;
+      color: #3062db;
+      font-weight: 600;
+  }
+
+  .addStudentArea
+  {
+    font-size: 1.1rem;
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .addStudentArea input
+  {
+    height: 30px;
+    margin: 0 1rem;
+    text-align: center;
+  }
+  .addStudentArea button 
+  {
+      background-color: #3062db;
+      height: 30px;
+      width: 150px;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+      color: #ffffff;
+  }
+  .tableAreaStudentsAlreadyInClass 
+  {
+    
+      margin-top: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+  }
+  .tableStudentsAlreadyInClassHeaderTitle th 
+  {
+    width: 150px;
+    margin: 1rem 1rem;
+    background-color: #3062db;
+    color: #ffffff;
+    font-weight: normal;
+    padding: 0.3rem;
+  }
+
+  .tableContentStudentsAlreadyInClass td
+  {
+    width: 150px;
+    padding: 0.5rem  0.2rem;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .tableContentStudentsAlreadyInClass td:nth-child(2)
+  {
+      width: 250px;
+      padding: 0.5rem  0;
+      text-align: center;
+  }
+  
+
+  .tableContent tr 
+  {
+      padding: 1rem;
+  }
+

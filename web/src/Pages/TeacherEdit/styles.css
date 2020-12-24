@@ -1,0 +1,73 @@
+
+.form-area 
+{
+    width: 100%;  
+    padding: 2rem;
+}
+
+.form-area h2
+{
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.form 
+{
+
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 2px solid #3062DB;
+    max-width: 736px;
+    padding: 1rem 0;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: -1rem;
+}
+
+.input-group 
+{
+    padding: 0.8rem;
+    margin: 0 auto;
+    max-width: 70%;
+}
+.input-group input, textarea
+{
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    color: rgb(5, 2, 2);
+    border: 1px solid rgb(165, 163, 163);
+    padding-left: 10px;
+}
+
+.input-group input
+{
+    height: 30px;
+}
+
+.input-group textarea 
+{
+    padding-top: 10px;
+}
+.input-group label
+{   
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.button-area-teacher 
+{
+    margin: 1.2rem auto;
+    width: 150px;
+    height: 56px;
+}
+
+.button-area-teacher button
+{
+    padding: 0.7rem;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #3062DB;
+    color: #FFFFFF;
+    border: none;
+}

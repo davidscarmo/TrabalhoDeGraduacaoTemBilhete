@@ -1,0 +1,56 @@
+.mainStudentsListContainer 
+  {
+      width: 95%;
+      height: 100%;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .mainStudentsListContainer h2
+  {
+      margin: 1rem 0;
+      font-size: 1.25rem;
+      color: #3062db;
+      font-weight: 600;
+  }
+
+  .tableAreaStudentsList 
+  {
+      
+      margin-top: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+  }
+  .tableStudentsListHeaderTitle th 
+  {
+      width: 150px;
+      margin: 1rem 1rem;
+      background-color: #3062db;
+      color: #ffffff;
+      font-weight: normal;
+      padding: 0.3rem;
+  }
+
+  .tableContentStudentsList td
+  {
+      width: 150px;
+      padding: 0.5rem  0.2rem;
+      text-align: center;
+      background-color: #ffffff;
+  }
+  
+  .tableContentStudentsList td:nth-child(2)
+  {
+      min-width: 200px;
+      padding: 0px !important;
+      text-align: center;
+  }
+  
+
+  .tableContentStudentsList tr 
+  {
+      padding: 1rem;
+  }

@@ -1,0 +1,17 @@
+.footer
+{
+    grid-area: footer;
+    width: 100%;
+    background-color: #3062DB;
+    height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p
+{
+    text-align: center;
+    padding: 1rem;
+    color: #FFFFFF;
+}

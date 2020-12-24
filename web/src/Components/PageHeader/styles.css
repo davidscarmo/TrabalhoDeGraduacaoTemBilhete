@@ -1,0 +1,99 @@
+*
+{
+  text-decoration: none;
+}
+header 
+{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-areas: "logo menu"
+    "headerTitle headerTitle";
+}
+
+.logo 
+{
+    grid-area: logo;
+    background-color: #3062db;
+    padding: 0.75rem;
+}
+.logo img 
+{
+    width: 4rem;
+    display: block;
+    margin-left: 10%;
+}
+.menuArea 
+{
+    grid-area: menu;
+}
+  .menuArea {
+    background: #3062db;
+  }
+  
+  ul {
+    background: #3062db;
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+  }
+  
+  li {
+      color: #fff;
+      background: #3062db;
+      display: block;
+      float: left;
+      padding: 2rem;
+      position: relative;
+      text-decoration: none;
+    transition-duration: 0.5s;
+  }
+    
+  li a {
+    color: #fff;
+  }
+  
+  li:hover {
+      background: #5686F9;
+      cursor: pointer;
+  }
+  
+  ul li ul {
+      background: #3062db;
+      visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+      position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+      left: 0;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  
+  ul li ul li {
+      clear: both;
+    width: 100%;
+  }
+
+  .headerTitle 
+  {
+      grid-area: headerTitle;
+      height: 10rem;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      background-color: #5686F9;
+  }
+
+  .headerTitle p 
+  {
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.5rem;
+  }
