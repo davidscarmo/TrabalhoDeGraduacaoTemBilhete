@@ -110,7 +110,7 @@ const StudentClassRegister = () =>
                     </table>
                     </div>
             </main>
-            <Footer /> 
+
         </div>
     )
 }

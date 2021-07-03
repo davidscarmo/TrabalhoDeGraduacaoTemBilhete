@@ -141,7 +141,7 @@ const TeacherRegister = () =>
        
         </main>
          
-             <Footer />
+           
         </div>
     ); 
 }

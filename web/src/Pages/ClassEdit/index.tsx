@@ -146,7 +146,6 @@ const ClassEdit = () =>
        
         </main>
          
-             <Footer />
         </div>
     ); 
 }

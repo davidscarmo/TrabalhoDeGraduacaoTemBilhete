@@ -86,8 +86,6 @@ const Announcements = () =>
             </form>
        
         </main>
-         
-             <Footer />
         </div>
     ); 
 }

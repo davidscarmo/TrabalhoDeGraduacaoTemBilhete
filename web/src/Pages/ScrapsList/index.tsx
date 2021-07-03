@@ -48,7 +48,7 @@ const ScrapsList= () =>
                     </table>
                     </div>
                 </main>
-            <Footer />
+
         </div>
     )
 }

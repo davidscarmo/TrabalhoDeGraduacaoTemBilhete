@@ -73,7 +73,6 @@ const Announcements = () =>
        
         </main>
          
-             <Footer />
         </div>
     ); 
 }

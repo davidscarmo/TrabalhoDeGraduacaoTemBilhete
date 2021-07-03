@@ -24,7 +24,7 @@ const Home = () =>
     useEffect(() => 
     {
         searchRequests();
-    }); 
+    }, []); 
    return(
        <div className="container">
            <PageHeader title="Tem Bilhete?  O seu sistema para comunicação escolar." />
@@ -88,7 +88,7 @@ const Home = () =>
                
             </main>
             
-           <Footer />
+           
        </div>
        
    );

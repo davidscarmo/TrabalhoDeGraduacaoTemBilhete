@@ -57,7 +57,6 @@ const Requests = () =>
                     </div>
                     
                 </main>
-            <Footer />
         </div>
     )
 }

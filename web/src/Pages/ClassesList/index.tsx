@@ -49,7 +49,6 @@ const ClassesList = () =>
                     </table>
                     </div>
                 </main>
-            <Footer />
         </div>
     )
 }
