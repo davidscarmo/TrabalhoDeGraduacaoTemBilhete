@@ -10,8 +10,8 @@ export default class EmailController
             host: 'smtp.gmail.com', 
             port: 587, 
             auth: {
-                user: 'adicionar um gmail para o envio ', 
-                pass: 'inserir senha '
+                user: 'tembilhetenodejs@gmail.com', 
+                pass: 'tembilhete123'
             }
         }); 
         const messageTextRa = request.query;
@@ -51,8 +51,8 @@ export default class EmailController
         console.log(message); 
         
         const messageBody = {
-            from: 'adicionar o email de envio', // Sender address
-            to: 'adicionar o email que vai receber',         // List of recipients
+            from: 'tembilhetenodejs@gmail.com', // Sender address
+            to: 'davidsc2812@gmail.com',         // List of recipients
             subject: subject + ` - ${studentNameId[0].name}` + ` - ${studentClassName[0].class_name}`, // Subject line
             text: message // Plain text body
         };
