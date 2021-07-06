@@ -1,6 +1,4 @@
 import React from 'react'; 
-import { Link } from 'react-router-dom';
-import api from '../../Services/api';
 import ConvertData from '../../utils/convertData'; 
 export interface Scraps
 {

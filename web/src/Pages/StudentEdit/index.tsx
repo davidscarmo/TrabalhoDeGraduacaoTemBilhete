@@ -3,9 +3,9 @@ import React, { FormEvent, useEffect, useState } from "react";
 import "./styles.css";
 
 import api from "../../Services/api";
-import Footer from "../../Components/Footer";
 import PageHeader from "../../Components/PageHeader";
 import { useHistory, useParams } from "react-router-dom";
+import { InputComponent } from "../../Components/Input/Index";
 
 const StudentEdit = () => {
   const [name, setName] = useState("");
@@ -78,7 +78,7 @@ const StudentEdit = () => {
         history.push("/studentsList");
       })
       .catch(() => {
-        alert("Erro ao aditar Aluno! Confira os campos e tente novamente!");
+        alert("Erro ao editar Aluno! Confira os campos e tente novamente!");
       });
   };
 
@@ -91,146 +91,114 @@ const StudentEdit = () => {
           <h2>Preencha os dados</h2>
 
           <div className="input-group">
-            <label htmlFor="name">Nome</label> <br />
-            <input
-              type="text"
-              name="name"
+            <InputComponent
+              label="Nome : "
               id="name"
               value={name}
-              onChange={(e) => {
-                setName(e.target.value);
-              }}
+              setValue={setName}
+              name="name"
               required
             />
           </div>
           <div className="input-group">
-            <label htmlFor="ra">R.A.</label> <br />
-            <input
-              type="text"
-              name="ra"
+            <InputComponent
+              label="R.A. :"
               id="ra"
               value={ra}
-              onChange={(e) => {
-                setRA(e.target.value);
-              }}
+              setValue={setRA}
               required
             />
           </div>
           <div className="input-group">
-            <label htmlFor="rg">R.G.</label> <br />
-            <input
-              type="text"
+            <InputComponent
+              label="R.G. :"
               name="rg"
               id="rg"
               value={rg}
-              onChange={(e) => {
-                setRG(e.target.value);
-              }}
+              setValue={setRG}
             />
           </div>
           <div className="input-group">
-            <label htmlFor="cpf">CPF</label> <br />
-            <input
-              type="text"
+            <InputComponent
+              label="CPF: "
               name="cpf"
               id="cpf"
               value={cpf}
-              onChange={(e) => {
-                setCPF(e.target.value);
-              }}
+              setValue={setCPF}
               required
             />
           </div>
           <div className="input-group">
-            <label htmlFor="dataNascimento">Data de Nascimento</label> <br />
-            <input
+            <InputComponent
               type="date"
+              label="Data de Nascimento : "
               name="dataNascimento"
               id="dataNascimento"
               value={dataNascimento}
-              onChange={(e) => {
-                setDataNascimento(e.target.value);
-              }}
+              setValue={setDataNascimento}
               required
             />
           </div>
 
           <div className="input-group">
-            <label htmlFor="nomeMae">Nome da Mae</label> <br />
-            <input
-              type="text"
+            <InputComponent
+              label="Nome da Mãe : "
               name="nomeMae"
               id="nomeMae"
               value={nomeMae}
-              onChange={(e) => {
-                setNomeMae(e.target.value);
-              }}
+              setValue={setNomeMae}
               required
             />
           </div>
           <div className="input-group">
-            <label htmlFor="nomePai">Nome do Pai</label> <br />
-            <input
-              type="text"
+            <InputComponent
+              label="Nome do Pai: "
               name="nomePai"
               id="nomePai"
               value={nomePai}
-              onChange={(e) => {
-                setNomePai(e.target.value);
-              }}
+              setValue={setNomePai}
             />
           </div>
           <div className="input-group">
-            <label htmlFor="tel1">Telefone 1</label> <br />
-            <input
-              type="text"
+            <InputComponent
+              label="Telefone 1 : "
               name="tel1"
               id="tel1"
               value={tel1}
-              onChange={(e) => {
-                setTel1(e.target.value);
-              }}
+              setValue={setTel1}
               required
             />
           </div>
           <div className="input-group">
-            <label htmlFor="nomeMae">Falar com: </label> <br />
-            <input
-              type="text"
+            <InputComponent
+              label="Falar com : "
               name="tel1Desc"
               id="tel1Desc"
               value={tel1Desc}
-              onChange={(e) => {
-                setTel1Desc(e.target.value);
-              }}
+              setValue={setTel1Desc}
               required
             />
           </div>
           <div className="input-group">
-            <label htmlFor="tel2">Telefone 2</label> <br />
-            <input
-              type="text"
+          <InputComponent
+              label="Telefone 2 : "
               name="tel2"
               id="tel2"
               value={tel2}
-              onChange={(e) => {
-                setTel2(e.target.value);
-              }}
+              setValue={setTel2}
+              required
             />
           </div>
           <div className="input-group">
-            <label htmlFor="nomeMae">Falar com: </label> <br />
-            <input
-              type="text"
+          <InputComponent
+              label="Falar com : "
               name="tel2Desc"
               id="tel2Desc"
               value={tel2Desc}
-              onChange={(e) => {
-                setTel2Desc(e.target.value);
-              }}
+              setValue={setTel2Desc}
+              required
             />
           </div>
-
           <div className="button-area-student">
             <button type="submit">Editar Aluno</button>
           </div>

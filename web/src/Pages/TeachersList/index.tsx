@@ -1,60 +1,54 @@
-import React, { useEffect, useState } from 'react'; 
-import Footer from '../../Components/Footer';
-import PageHeader from '../../Components/PageHeader';
-import api from '../../Services/api';
-import './styles.css'; 
-import TeachersItem, {Teachers} from '../../Components/TeachersItem'; 
+import React, { useEffect, useState } from "react";
 
-const TeachersList = () => 
-{
-    const[teachersData, setTeachersData] = useState([]); 
+import PageHeader from "../../Components/PageHeader";
+import api from "../../Services/api";
+import "./styles.css";
+import TeachersItem, { Teachers } from "../../Components/TeachersItem";
 
-    const searchTeachersData = async () =>
-    {
-        const response = await api.get('/teachers'); 
+const TeachersList = () => {
+  const [teachersData, setTeachersData] = useState([]);
 
-        setTeachersData(response.data); 
-     
-    } 
+  const searchTeachersData = async () => {
+    const response = await api.get("/teachers");
 
-    useEffect(() => 
-    {
-        searchTeachersData();
-    }); 
-    return(
-        <div className="container" >
-            <PageHeader title="Confira aqui os professores cadastrados."/> 
-            <main className="mainTeacherListContainer">
-            <h2>Professores</h2>
-                    <div className="tableAreaTeacherList">
-                    <table>
-                        <thead className="tableTeacherListHeaderTitle">
-                            <tr>
-                                <th>Cod.</th>
-                                <th>Nome</th>
-                                <th>Email</th>
-                                <th>RG</th>
-                                <th>CPF</th>
-                                <th>Data de Nascimento</th>
-                                <th>Telefone</th>
-                                <th>Pasep</th>
-                                <th>Turma</th>
-                                <th>Editar</th>
-                                <th>Excluir</th>
-                            </tr>
-                        </thead>
-                        <tbody className="tableContentTeacherList">
-                        {teachersData.map((teachers: Teachers) =>
-                               {
-                                   return <TeachersItem key={teachers.id} teachers={teachers} />
-                               })}  
-                        </tbody>
-                    </table>
-                    </div>
-            </main>
-            <Footer />
+    setTeachersData(response.data);
+  };
+
+  useEffect(() => {
+    searchTeachersData();
+  });
+  return (
+    <div className="container">
+      <PageHeader title="Confira aqui os professores cadastrados." />
+      <main className="mainTeacherListContainer">
+        <h2>Professores</h2>
+        <div className="tableAreaTeacherList">
+          <table>
+            <thead className="tableTeacherListHeaderTitle">
+              <tr>
+                <th>Cod.</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>RG</th>
+                <th>CPF</th>
+                <th>Data de Nascimento</th>
+                <th>Telefone</th>
+                <th>Pasep</th>
+                <th>Turma</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+              </tr>
+            </thead>
+            <tbody className="tableContentTeacherList">
+              {teachersData.map((teachers: Teachers) => {
+                return <TeachersItem key={teachers.id} teachers={teachers} />;
+              })}
+            </tbody>
+          </table>
         </div>
-    )
-}
+      </main>
+    </div>
+  );
+};
 
-export default TeachersList; 
+export default TeachersList;

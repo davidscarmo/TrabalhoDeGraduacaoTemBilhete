@@ -5,7 +5,6 @@ import "./styles.css";
 
 import PageHeader from "../../Components/PageHeader";
 import RequestItem, { RequestsInterface } from "../../Components/RequestItem";
-import Footer from "../../Components/Footer";
 
 import api from "../../Services/api";
 const Home = () => {

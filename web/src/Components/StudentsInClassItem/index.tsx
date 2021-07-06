@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import api from '../../Services/api';
 
 export interface StudentsInClass
